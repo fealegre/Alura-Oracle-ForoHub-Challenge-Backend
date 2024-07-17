@@ -1,4 +1,4 @@
-package com.alura.forohub.challenge.infra;
+package com.alura.forohub.challenge.infra.errors;
 
 
 import org.springframework.http.ResponseEntity;

@@ -2,16 +2,22 @@ package com.alura.forohub.challenge.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDateTime;
 
 
-@Entity
+@Entity(name = "Topico")
+@Table(name = "topicos")
+//@Data is like having implicit @Getter, @Setter, @ToString, @EqualsAndHashCode and
+// @RequiredArgsConstructor annotations on the class (except that no constructor will
+// be generated if any explicitly written constructors already exist).
 @Data
-@NoArgsConstructor
+
 public class Topico {
 
     @Id
